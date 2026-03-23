@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Roboto', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+
+  --color-brand-red: #ff3131;
+  --color-brand-gray: oklch(70.7% 0.022 261.325);
+  --color-brand-dark: #0a0a0a;
+  --color-brand-panel: #111111;
+  --color-brand-background: #0d0d0d;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #111111 inset;
+  -webkit-text-fill-color: #fff;
+  border: 1px solid var(--color-brand-gray);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
